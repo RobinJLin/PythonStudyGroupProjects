@@ -112,9 +112,7 @@ if __name__ == "__main__":
             r = color[0]
             g = color[1]
             b = color[2]
-            #print(f"HSL: #{r:x}{g:x}{b:x}")
-            color_code = f"#{r:x}{g:x}{b:x}"
-            colors[location] = f"#{r:x}{g:x}{b:x}"
+            colors[location] = f"#{r:02x}{g:x}{b:x}"
 
         if result[0][0] == "kmt":
             color = ImageColor.getrgb(f"hsl(212, 100%, {int(75 -40 *ratio)}%)")
@@ -122,7 +120,6 @@ if __name__ == "__main__":
             r = color[0]
             g = color[1]
             b = color[2]
-            #print(f"HSL:#{r:x}{g:x}{b:x}")
             colors[location] = f"#{r:02x}{g:x}{b:x}"
 
         if result[0][0] == "tpp":
@@ -130,7 +127,6 @@ if __name__ == "__main__":
             r = color[0]
             g = color[1]
             b = color[2]
-            #print(f"HSL: #{r:x}{g:x}{b:x}")
             colors[location] = f"#{r:02x}{g:x}{b:x}"
     pprint(colors)
 

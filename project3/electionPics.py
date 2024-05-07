@@ -4,6 +4,7 @@ import os
 import sys
 import json
 from email import header
+from pprint import pprint
 
 import pandas as pd
 from PIL import ImageColor
@@ -58,7 +59,7 @@ if __name__ == "__main__":
                                   "kmt": voting_results["kmt"][location]
                                   }
 
-    #print(locationDICT)
+    pprint(locationDICT)
 
     ## percentage
 
@@ -67,7 +68,7 @@ if __name__ == "__main__":
         location_sum = sum(locationDICT[location].values())
         percentage[location] = {"tpp": (locationDICT[location]["tpp"]/location_sum )*100, "dpp": (locationDICT[location]["dpp"]/location_sum)*100, "kmt": (locationDICT[location]["kmt"]/location_sum)*100}
 
-    print(percentage)
+    pprint(percentage)
 
     ## 計算 winner 和 得票差距
 
@@ -99,7 +100,7 @@ if __name__ == "__main__":
     ## 轉換成 HEX 色碼
     colors = {}
     for location in percentage:
-        print(percentage[location])
+        print(location)
         result = sorted(percentage[location].items(), key=lambda x:x[1], reverse=True)
         diff = result[0][1] - result[1][1]
         diff_list.append(diff)
@@ -112,15 +113,17 @@ if __name__ == "__main__":
             g = color[1]
             b = color[2]
             #print(f"HSL: #{r:x}{g:x}{b:x}")
+            color_code = f"#{r:x}{g:x}{b:x}"
             colors[location] = f"#{r:x}{g:x}{b:x}"
 
         if result[0][0] == "kmt":
             color = ImageColor.getrgb(f"hsl(212, 100%, {int(75 -40 *ratio)}%)")
+            print(color)
             r = color[0]
             g = color[1]
             b = color[2]
             #print(f"HSL:#{r:x}{g:x}{b:x}")
-            colors[location] = f"#{r:x}{g:x}{b:x}"
+            colors[location] = f"#{r:02x}{g:x}{b:x}"
 
         if result[0][0] == "tpp":
             color = ImageColor.getrgb(f"hsl(177, 61%, {int(75 -40 *ratio)}%)")
@@ -128,8 +131,8 @@ if __name__ == "__main__":
             g = color[1]
             b = color[2]
             #print(f"HSL: #{r:x}{g:x}{b:x}")
-            colors[location] = f"#{r:x}{g:x}{b:x}"
-    print(colors)
+            colors[location] = f"#{r:02x}{g:x}{b:x}"
+    pprint(colors)
 
     # 開啟 SVG 檔案
     file_path = f"Blank_Taiwan_map.svg"  # 上傳的檔案路徑

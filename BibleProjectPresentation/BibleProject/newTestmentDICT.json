@@ -1,0 +1,137 @@
+{
+    "Matthew": {
+        "chinese_name": "馬太福音",
+        "chinese_abbr": "太",
+        "english_abbr": "Mat"
+    },
+    "Mark": {
+        "chinese_name": "馬可福音",
+        "chinese_abbr": "可",
+        "english_abbr": "Mak"
+    },
+    "Luke": {
+        "chinese_name": "路加福音",
+        "chinese_abbr": "路",
+        "english_abbr": "Luk"
+    },
+    "John": {
+        "chinese_name": "約翰福音",
+        "chinese_abbr": "約",
+        "english_abbr": "Jhn"
+    },
+    "Acts": {
+        "chinese_name": "使徒行傳",
+        "chinese_abbr": "徒",
+        "english_abbr": "Act"
+    },
+    "Romans": {
+        "chinese_name": "羅馬書",
+        "chinese_abbr": "羅",
+        "english_abbr": "Rom"
+    },
+    "1Corinthians": {
+        "chinese_name": "哥林多前書",
+        "chinese_abbr": "林前",
+        "english_abbr": "1Co"
+    },
+    "2Corinthians": {
+        "chinese_name": "哥林多後書",
+        "chinese_abbr": "林後",
+        "english_abbr": "2Co"
+    },
+    "Galatians": {
+        "chinese_name": "加拉太書",
+        "chinese_abbr": "加",
+        "english_abbr": "Gal"
+    },
+    "Ephesians": {
+        "chinese_name": "以弗所書",
+        "chinese_abbr": "弗",
+        "english_abbr": "Eph"
+    },
+    "Philippians": {
+        "chinese_name": "腓立比書",
+        "chinese_abbr": "腓",
+        "english_abbr": "Phl"
+    },
+    "Colossians": {
+        "chinese_name": "歌羅西書",
+        "chinese_abbr": "西",
+        "english_abbr": "Col"
+    },
+    "1Thessalonians": {
+        "chinese_name": "帖撒羅尼迦前書",
+        "chinese_abbr": "帖前",
+        "english_abbr": "1Ts"
+    },
+    "2Thessalonians": {
+        "chinese_name": "帖撒羅尼迦後書",
+        "chinese_abbr": "帖後",
+        "english_abbr": "2Ts"
+    },
+    "1Timothy": {
+        "chinese_name": "提摩太前書",
+        "chinese_abbr": "提前",
+        "english_abbr": "1Ti"
+    },
+    "2Timothy": {
+        "chinese_name": "提摩太後書",
+        "chinese_abbr": "提後",
+        "english_abbr": "2Ti"
+    },
+    "Titus": {
+        "chinese_name": "提多書",
+        "chinese_abbr": "多",
+        "english_abbr": "Tit"
+    },
+    "Philemon": {
+        "chinese_name": "腓利門書",
+        "chinese_abbr": "門",
+        "english_abbr": "Phm"
+    },
+    "Hebrews": {
+        "chinese_name": "希伯來書",
+        "chinese_abbr": "來",
+        "english_abbr": "Heb"
+    },
+    "James": {
+        "chinese_name": "雅各書",
+        "chinese_abbr": "雅",
+        "english_abbr": "Jas"
+    },
+    "1Peter": {
+        "chinese_name": "彼得前書",
+        "chinese_abbr": "彼前",
+        "english_abbr": "1Pe"
+    },
+    "2Peter": {
+        "chinese_name": "彼得後書",
+        "chinese_abbr": "彼後",
+        "english_abbr": "2Pe"
+    },
+    "1John": {
+        "chinese_name": "約翰壹書",
+        "chinese_abbr": "約一",
+        "english_abbr": "1Jn"
+    },
+    "2John": {
+        "chinese_name": "約翰貳書",
+        "chinese_abbr": "約二",
+        "english_abbr": "2Jn"
+    },
+    "3John": {
+        "chinese_name": "約翰參書",
+        "chinese_abbr": "約三",
+        "english_abbr": "3Jn"
+    },
+    "Jude": {
+        "chinese_name": "猶大書",
+        "chinese_abbr": "猶",
+        "english_abbr": "Jud"
+    },
+    "Revelation": {
+        "chinese_name": "啟示錄",
+        "chinese_abbr": "啟",
+        "english_abbr": "Rev"
+    }
+}
